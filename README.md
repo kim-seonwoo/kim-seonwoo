@@ -7,7 +7,7 @@ examples:
   half year calendar: https://github.com/lowlighter/metrics/blob/examples/metrics.plugin.isocalendar.svg
 index: 0
 supports:
-  - user
+  - kim-seonwoo
 scopes:
   - public_access
 inputs:
