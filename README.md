@@ -1,17 +1,31 @@
-name: GitHub City
-uses: lowlighter/metrics@latest
-with:
-  filename: metrics.plugin.skyline.city.svg
-  token: NOT_NEEDED
-  base: ""
-  plugin_skyline: yes
-  plugin_skyline_year: 2020
-  plugin_skyline_frames: 6
-  plugin_skyline_quality: 1
-  plugin_skyline_settings: |
-    {
-      "url": "https://honzaap.github.io/GithubCity?name=${login}&year=${year}",
-      "ready": "[...document.querySelectorAll('.display-info span')].map(span => span.innerText).includes('${login}')",
-      "wait": 4,
-      "hide": ".github-corner, .footer-link, .buttons-options, .mobile-rotate, .display-info span:first-child"
-    }
+name: 📅 Isometric commit calendar
+category: github
+description: |
+  This plugin displays an isometric view of a user commit calendar along with a few additional statistics like current streak and average number of commit per day.
+examples:
+  +full year calendar: https://github.com/lowlighter/metrics/blob/examples/metrics.plugin.isocalendar.fullyear.svg
+  half year calendar: https://github.com/lowlighter/metrics/blob/examples/metrics.plugin.isocalendar.svg
+index: 0
+supports:
+  - user
+scopes:
+  - public_access
+inputs:
+
+  plugin_isocalendar:
+    description: |
+      Enable isocalendar plugin
+    type: boolean
+    default: no
+
+  plugin_isocalendar_duration:
+    description: |
+      Time range
+
+      - `half-year`: 180 days
+      - `full-year`: 1 year
+    type: string
+    default: half-year
+    values:
+      - half-year
+      - full-year
