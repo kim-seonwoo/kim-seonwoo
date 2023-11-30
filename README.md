@@ -1,31 +1,5 @@
-name: 📅 Isometric commit calendar
-category: github
-description: |
-  This plugin displays an isometric view of a user commit calendar along with a few additional statistics like current streak and average number of commit per day.
-examples:
-  +full year calendar: https://github.com/lowlighter/metrics/blob/examples/metrics.plugin.isocalendar.fullyear.svg
-  half year calendar: https://github.com/lowlighter/metrics/blob/examples/metrics.plugin.isocalendar.svg
-index: 0
-supports:
-  - kim-seonwoo
-scopes:
-  - public_access
-inputs:
+### Hi there 👋
 
-  plugin_isocalendar:
-    description: |
-      Enable isocalendar plugin
-    type: boolean
-    default: no
+**kim-seonwoo/kim-seonwoo** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
-  plugin_isocalendar_duration:
-    description: |
-      Time range
-
-      - `half-year`: 180 days
-      - `full-year`: 1 year
-    type: string
-    default: half-year
-    values:
-      - half-year
-      - full-year
+- ![ehdtjs's GitHub stats](https://github-readme-stats.vercel.app/api?username=kim-seonwoo&show_icons=true&theme=tokyonight)
